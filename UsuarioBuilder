@@ -1,0 +1,88 @@
+package padroescriacao.builder;
+
+import java.util.Date;
+
+public class UsuarioBuilder {
+
+    private Usurario Usuario;
+
+    public UsuarioBuilder() {
+        Usuario = new Usuario();
+    }
+
+    public Usuario build() {
+        if (aluno.senha() == 0) {
+            throw new IllegalArgumentException("Senha inválida");
+        }
+        if (Usuario.getNome().equals("")) {
+            throw new IllegalArgumentException("Nome inválido");
+        }
+        return Usuario;
+    }
+
+    public UsuarioBuilder setsenha(int senha) {
+        Usuario.setsenha(senha);
+        return this;
+    }
+
+    public UsuarioBuilder setNome(String nome) {
+        Usuario.setNome(nome);
+        return this;
+    }
+
+    public UsuarioBuilder setDataNascimento(Date dataNascimento) {
+        Usuario.setDataNascimento(dataNascimento);
+        return this;
+    }
+
+    public UsuarioBuilder setCpf(String cpf) {
+        Usuario.setCpf(cpf);
+        return this;
+    }
+
+    public UsuarioBuilder setRg(String rg) {
+        Usuario.setRg(rg);
+        return this;
+    }
+
+    public UsuarioBuilder setEnderecoLogradouro(String enderecoLogradouro) {
+        Usuario.setEnderecoLogradouro(enderecoLogradouro);
+        return this;
+    }
+
+    public UsuarioBuilder setEnderecoNumero(int enderecoNumero) {
+        Usuario.setEnderecoNumero(enderecoNumero);
+        return this;
+    }
+
+    public UsuarioBuilder setEnderecoComplemento(String enderecoComplemento) {
+        Usuario.setEnderecoComplemento(enderecoComplemento);
+        return this;
+    }
+
+    public UsuarioBuilder setEnderecoBairro(String enderecoBairro) {
+        Usuario.setEnderecoBairro(enderecoBairro);
+        return this;
+    }
+
+    public UsuarioBuilder setEnderecoCidade(String enderecoCidade) {
+        Usuario.setEnderecoCidade(enderecoCidade);
+        return this;
+    }
+
+    public UsuarioBuilder setEnderecoUF(String enderecoUF) {
+        Usuario.setEnderecoUF(enderecoUF);
+        return this;
+    }
+
+    public UsuarioBuilder setCep(String cep) {
+        Usuario.setCep(cep);
+        return this;
+    }
+
+    public UsuarioBuilder setConta(String conta) {
+        Usuario.setConta(contar);
+        return this;
+    }
+
+}
